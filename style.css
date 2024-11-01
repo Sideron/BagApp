@@ -1,0 +1,146 @@
+body{
+    margin: 0px 0px;
+    background-color: #ffe590;
+    color: rgb(56, 45, 37);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+::-webkit-scrollbar {
+    overflow-y: scroll;
+    display: none;
+  }
+
+.header{
+    overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+    padding: 0em;
+    background-color: rgb(56, 45, 37);
+    color: #fffcee;
+    font-size: 30px;
+    margin-top: -20px;
+}
+.header h1{
+  padding-left: 0.4em;
+  margin-bottom: 0.3em;
+}
+.weigthBar{
+  position:absolute;
+  color: rgb(94, 76, 63);;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  margin-top: -10px;
+  z-index: -100;
+  border-radius: 10px;
+}
+.weigthBar::-webkit-progress-bar {
+  background-color:rgb(94, 76, 63);
+}
+.weigthBar::-webkit-progress-value {
+  background-color: #2f7c39;
+}
+.weigthCount{
+  padding: 0.4em;
+  margin-left: -0.5em;
+}
+.weigthCount p{
+  margin: 0em 1em;
+}
+.emptyListSign{
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-style:dotted;
+    border-color:rgb(56, 45, 37);
+    border-radius: 30px;
+}
+.item{
+    /*display: flex;*/
+    box-sizing: border-box;
+    background-color: #fffcee;
+    padding: 9px 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 1em;
+}
+.itemImg{
+    width: 8.5em;
+    height: 8.5em;
+    display: block;
+    float: right;
+    margin-top: -10em;
+    margin-right: -1.3em;
+}
+.editItemBT{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    height: 29.8%;
+    border-radius: 2.2em;
+    margin-top: -0.65em;
+    transition: background-color 0.3s ease;
+}
+.editItemBT:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.addItemBT{
+    background-color: rgb(56, 45, 37);
+    color: #fffcee;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 13px 30px;
+    font-size: 70px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.addItemBT:hover{
+    background-color: rgb(94, 76, 63);
+}
+
+/* Forms style */
+
+.addItemPage{
+  position: fixed;
+  top: 0em;
+  bottom: 0em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.329);
+  color: white;
+}
+
+.addItemForm{
+  position: fixed;
+  inset: 0px;
+  background-color: rgb(56, 45, 37);
+  border-radius: 1em;
+  width: 20em;
+  max-height: fit-content;
+  padding: 2em 4em;
+  margin: auto;
+}
+
+.addItemForm p{
+  color: rgb(255, 132, 132);
+  font-size: 1.3em;
+}
+
+.submitFormBT{
+  position:relative;
+  background-color: white;
+  border: 0em;
+  color: rgb(56, 45, 37);
+  left: 5em;
+  font-size: 2em;
+}
